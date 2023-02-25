@@ -16,6 +16,43 @@
     font-style: normal;
     font-display: swap;
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 html {
     font-family: 'Kanit';
+}
+header {
+    height: 70px;
+    background-color: #494949;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+header .navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 30px;
+}
+header .navbar ul li a {
+    text-decoration: none;
+    color: white;
+    transition: text-shadow, color .4s ease-in-out;
+}
+header .navbar ul li a:hover {
+    text-decoration: none;
+    color: black;
+    text-shadow: 1px 2px 3px gray;
+}
+header .title .icon {
+    width: 3.2rem;
+    vertical-align: middle;
+}
+
+@media screen and ( max-width: 541px ) {
+    
 }
