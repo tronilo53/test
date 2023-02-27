@@ -1,0 +1,108 @@
+/* HEADER */
+@media screen and ( max-width: 550px ) {
+    header {
+        display: block;
+        text-align: center;
+        padding: 20px 0;
+        height: 100%;
+        width: 100% !important;
+        overflow: hidden;
+    }
+    header .navbar {
+        margin-top: 20px;
+    }
+    header .navbar ul {
+        width: 100%;
+    }
+    header .navbar ul li {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+    header .navbar ul li a {
+        background-color: rgba(255, 255, 255, 0.7);
+        margin: 5px 0;
+        padding: 5px 0;
+        box-shadow: 1px 2px 3px black;
+        cursor: pointer;
+        display: block;
+    }
+    header .navbar li a:hover {
+        box-shadow: inset 1px 2px 3px black;
+    }
+    header .navbar ul li a:active {
+        box-shadow: 1px 2px 3px black;
+    }
+}
+
+/* SECTION */
+@media screen and ( max-width: 719px ) {
+    section {
+        height: 300px;
+        display: block;
+    }
+    section .container {
+        top: 25%;
+    }
+    section .container .title {
+        font-size: 1.5rem;
+        letter-spacing: 10px;
+    }
+    section .container .button__section {
+        padding: 5px 20px;
+        margin-top: 50px;
+        background-color: lightblue;
+        border: none;
+        border-radius: 3px;
+        font-family: 'Kanit';
+        box-shadow: 1px 2px 3px black;
+        -webkit-box-shadow: 1px 2px 3px black;
+        -moz-box-shadow: 1px 2px 3px black;
+        -ms-box-shadow: 1px 2px 3px black;
+        transition: box-shadow 1s ease-in;
+        cursor: pointer;
+    }
+}
+@media screen and (max-width: 438px) {
+    section .container .title {
+        font-size: 1.5rem;
+        letter-spacing: 5px;
+    }
+}
+
+/* ASIDE */
+@media screen and ( max-width: 719px ) {
+    aside {
+        margin-top: 30px;
+        height: auto;
+    }
+    aside .img__aside {
+        height: 300px;
+    }
+}
+@media screen and (max-width: 550px) {
+    aside {
+        display: block !important;
+        position: none;
+        height: auto;
+    }
+    aside .img__aside {
+        height: 300px;
+    }
+}
+
+/* FOOTER */
+@media screen and ( max-width: 719px ) {
+    footer {
+        padding: 100px 0;
+    }
+}
+@media screen and (max-width: 550px) {
+    footer .container {
+        display: block;
+        text-align: center;
+    }
+    footer .container > div {
+        margin: 20px 0;
+    }
+}

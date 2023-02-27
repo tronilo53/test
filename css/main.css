@@ -61,21 +61,100 @@ section {
     background-size: cover;
     position: relative;
 }
-section .title {
+section .container {
     position: absolute;
     top: 50%;
     right: 0;
     left: 0;
     margin: 0 auto;
     text-align: center;
+}
+section .container .title {
     font-family: 'Anton';
     color: lightblue;
     font-size: 2rem;
     letter-spacing: 20px;
     text-shadow: 1px 2px 3px black;
 }
-footer img {
-    width: 1rem;
+section .container .button__section {
+    padding: 5px 20px;
+    margin-top: 50px;
+    background-color: lightblue;
+    border: none;
+    border-radius: 3px;
+    font-family: 'Kanit';
+    box-shadow: 1px 2px 3px black;
+    -webkit-box-shadow: 1px 2px 3px black;
+    -moz-box-shadow: 1px 2px 3px black;
+    -ms-box-shadow: 1px 2px 3px black;
+    transition: box-shadow 1s ease-in;
+    cursor: pointer;
+}
+section .container .button__section:hover {
+    box-shadow: inset 1px 2px 3px black;
+    -webkit-box-shadow: inset 1px 2px 3px black;
+    -moz-box-shadow: inset 1px 2px 3px black;
+    -ms-box-shadow: inset 1px 2px 3px black;
+}
+section .container .button__section:active {
+    box-shadow: 1px 2px 3px black;
+    -webkit-box-shadow: 1px 2px 3px black;
+    -moz-box-shadow: 1px 2px 3px black;
+    -ms-box-shadow: 1px 2px 3px black;
+}
+aside {
+    width: 100%;
+    height: 300px;
+    display: flex;
+}
+aside .img__aside {
+    flex-grow: 1;
+    margin: 10px;
+    border: 2px double gray;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+}
+aside .img__aside p {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    font-family: 'Anton';
+    color: white;
+    font-size: 2rem;
+    letter-spacing: 6px;
+    text-shadow: 1px 2px 3px black;
+}
+aside .img__aside:first-child {
+    background-image: url( '../img/venom_1.jpg' );
+}
+aside .img__aside:nth-child(2) {
+    background-image: url( '../img/venom_2.jpg' );
+}
+aside .img__aside:nth-child(3) {
+    background-image: url( '../img/venom_3.jpg' );
+}
+footer {
+    background-color: #494949;
+    width: 100%;
+    padding: 50px 0;
+}
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+footer .container > div {
+    flex-grow: 1;
+}
+footer .container .logo {
+    width: 3rem;
+    vertical-align: middle;
 }
 
 

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/media.css">
     <title>TESTAPP</title>
 </head>
 <body>
@@ -17,20 +18,23 @@
         <nav class="navbar child__header">
             <ul>
                 <li>
-                    <a href="www.google.com">Home</a>
+                    <a href="https://www.google.com">Home</a>
                 </li>
                 <li>
-                    <a href="www.github.com">Servicios</a>
+                    <a href="https://www.github.com">Servicios</a>
                 </li>
                 <li>
-                    <a href="www.bootstrap.com">Contacto</a>
+                    <a href="http://www.bootstrap.com">Contacto</a>
                 </li>
             </ul>
         </nav>
     </header>
     <!-- FORMULARIO POR ENCIMA DE IMAGEN -->
     <section>
-        <h2 class="title">"Lucha entre titanes"</h2>
+        <div class="container">
+            <h2 class="title">"Lucha entre titanes"</h2>
+            <button class="button__section" id="button__section" onclick="send()">Más info...</button>
+        </div>
     </section>
     <!-- CARRUSEL DE FOTOS -->
     <aside>
@@ -46,15 +50,17 @@
     </aside>
     <!-- PIE DE PAGINA -->
     <footer>
-        <div class="info__footer">
-            <img src="./img/venom.png" alt="venom.jpg">
-            <span>Venom 1.0.0</span>
-        </div>
-        <div class="info__footer">
-            <P>&copy; Derechos reservados 2023</P>
-        </div>
-        <div class="info__footer">
-            <p>By Luis TRM</p>
+        <div class="container">
+            <div class="info__footer">
+                <img class="logo" src="./img/venom.png" alt="venom.jpg">
+                <span>Venom 1.0.0</span>
+            </div>
+            <div class="info__footer">
+                <P>&copy; Derechos reservados 2023</P>
+            </div>
+            <div class="info__footer">
+                <p>By Luis TRM</p>
+            </div>
         </div>
     </footer>
 
